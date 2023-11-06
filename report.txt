@@ -1,5 +1,5 @@
 SQL Query Result (NE zone):
-Number of rows: 2208
+Rows: 2208
 
 Transformed DataFrame (CE zone):
-Number of rows: 2208
+Rows: 2208

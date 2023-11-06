@@ -39,6 +39,9 @@ def main():
     transformed_df = perform_data_transformation(
         imecas_df, column_of_interest, target_value
     )
+    
+    # Display the result DataFrame
+    transformed_df.show()
 
     # Build report
     report_content = "SQL Query Result (NE zone):\n"
@@ -50,8 +53,7 @@ def main():
     report_file_path = "report.txt"
     save_summary_report(report_content, report_file_path)
 
-    # Display the result DataFrame
-    transformed_df.show()
+
 
 
 if __name__ == "__main__":
