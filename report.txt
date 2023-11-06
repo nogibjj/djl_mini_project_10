@@ -1,5 +1,0 @@
-SQL Query Result (NE zone):
-Rows: 2208
-
-Transformed DataFrame (CE zone):
-Rows: 2208
