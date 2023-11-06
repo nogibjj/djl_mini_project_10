@@ -1,7 +1,6 @@
 """
 Main ci
 """
-import pandas as pd
 
 from my_lib.lib import (
     initialize_spark,
@@ -17,7 +16,7 @@ def main():
     spark = initialize_spark()
 
     #  Load the imecas dataset
-    file_path = "https://raw.githubusercontent.com/jjsantos01/aire_cdmx/master/datos/contaminantes_2019-05-16.cvs",
+    file_path = "https://raw.githubusercontent.com/jjsantos01/aire_cdmx/master/datos/contaminantes_2019-05-16.csv",
 
     imecas_df = read_csv(spark, file_path)
 

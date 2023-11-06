@@ -1,0 +1,12 @@
+import pandas as pd
+import requests
+%matplotlib inline
+url_2='http://www.aire.cdmx.gob.mx/aire/default.php?opc=%27aqBjnmg=%27'
+url = 'http://www.aire.cdmx.gob.mx/estadisticas-consultas/consultas/resultado_consulta.php'
+hoy = pd.datetime.today()
+inicial = hoy - pd.Timedelta(15, unit='d')
+hoy_iso = hoy.date().isoformat()
+data = {'diai': inicial.day, 'mesi': inicial.month, 'anoi': inicial.year,
+        'diaf': hoy.day, 'mesf': hoy.month, 'anof': hoy.year,
+        'TZ': 'on', 'TC': 'on', 'Q': 'horarios', 'consulta': 'Consulta', 'inter': ''}
+resp = requests.post(url_2, data=data)
