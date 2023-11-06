@@ -43,18 +43,6 @@ def main():
     # Display the result DataFrame
     transformed_df.show()
 
-    # Build report
-    report_content = "SQL Query Result (NE zone):\n"
-    report_content += f"Rows: {result_df.count()}\n\n"
-    report_content += "Transformed DataFrame (CE zone):\n"
-    report_content += f"Rows: {transformed_df.count()}\n"
-
-    # Step 6: Save summary report
-    report_file_path = "report.txt"
-    save_summary_report(report_content, report_file_path)
-
-
-
 
 if __name__ == "__main__":
     main()
