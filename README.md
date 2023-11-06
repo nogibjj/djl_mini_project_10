@@ -1,6 +1,7 @@
-# Mini Project 10
-Week 10: PySpark Data Processing
+[![CI](https://github.com/nogibjj/djl_mini_project_10/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/djl_mini_project_10/actions/workflows/cicd.yml)
+# Mini Project 10. PySpark Data Processing
 For this project, PySpark was used to process a large dataset. 
+
 ## SQL Query
 An SQL Query was performed to filter the dataset by the NE zone
 
