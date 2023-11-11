@@ -44,13 +44,3 @@ def perform_data_transformation(df, column, target):
     return transformed_df
 
 
-def save_summary_report(report_content, file_path):
-    """
-    Save a summary report to a PDF or markdown file.
-
-    Args:
-        report_content (str): Content of the summary report.
-        file_path (str): Path to save the report file.
-    """
-    with open(file_path, "w") as file:
-        file.write(report_content)
